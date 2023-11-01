@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal-Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/6877724e13.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <div class="header" id="header">
+        <div class="container">
+            <nav>
+                <div class="logo">Mum<span class="logospan">tyyY</span>.</div>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#aboutsection">About</a></li>
+                    <li><a href="#skillsection">skills</a></li>
+                    <li><a href="#contactsection">Contact</a></li>
+                    <img src="images/moon.png" alt="" class="icon">
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="content">
+                <div class="title">Hello, <img src="images/hand-wave-20-filled.svg" alt=""> I'm a</div>
+                <div class="subtitle">Front-End Software Engineer</div>
+                <div class="desc">Hi,I'm Mumtazha, an Attentive , Passionate and Dilligent Front-End Engineer in lagos. </div>
+                <button class="contentimg">Hire Me</button>
+                <img src="images/image(1).svg" alt="" class="heroimg">
+            </div>
+        </div>
+    </div>
+
+
+    <!----About section--->
+
+    <div class="aboutsection" id="aboutsection">
+        <div class="about-top">
+        <h3 class="about-title">About Me</h3>
+        <p class="about-subtitle">I'm Mumtazha Ayoade,part of I and my growth are some friends that are so supportive and can't be denied being part of this.</p>
+        <div class="about-img">
+            <img src="images/friend4.jpg" alt="" class="friend1">
+            <img src="images/friend5.jpeg" alt="" class="friend2">
+            <img src="images/about4.jpeg" alt="" class="friend3">
+        </div>
+        </div>
+        <!---Education table-->
+        <div class="education-table">
+            <div class="table1">
+                <img src="images/image(1).svg" alt="" class="edimg"></div>
+            <div class="table2">
+                <div class="tablehead">Mumtazha Ayoade</div>
+                <div class="tablenotes">I'm a Front-End Engineer. I can build websites well with HTML, CSS and<br>JAVASCRIPT.I can also make the websites lookngood with css animations.</div>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experiences</p>
+                </div>
+                <div class="tab-contents active-tab" id="education">
+                <div>
+                    <span class="table-span">Institute:</span> Kwara State Polytechnic <br>
+                    <span class="table-span">Course:</span> Mass Communication <br>
+                    <span class="table-span">Info:</span> Studied Mass Communication before transitioning into Tech.
+                </div><br>
+
+                <div class="">
+                    <span class="table-span">Institute:</span> GOMYCODE<br>
+                    <span class="table-span">Course:</span> Web Dev Fundamentals.<br>
+                    <span class="table-span">Info:</span> Studied Web Dev Fundamentalsfor at GOMYCODE.
+                </div><br>
+
+                <div class="">
+                    <span class="table-span">Institute:</span> FEMZ.ORG <br>
+                    <span class="table-span">Course:</span> Ui/Ux  <br>
+                    <span class="table-span">Info:</span>Currently Studying Ui/Ux .
+                </div><br>
+
+                <div class="">
+                    <span class="table-span">Institute:</span>Axia Africa<br>
+                    <span class="table-span">Course:</span> Front-End Software Engineer<br>
+                    <span class="table-span">Info:</span>Currently Studying Front-End Software Engineering.
+                </div>
+                </div>
+                <div class="tab-contents" id="experience">
+                <div>
+                    <span class="table-span">Company:</span> GOMYCODE <br> 
+                    <span class="table-span">Positon:</span> Intern
+                    <div class="second-table-list">
+                        <li>Worked alongside experienced software developers. </li>
+                        <li>Translated Figma designs into web pages using HTML, CSS and JAVASVRIPT.</li>
+                        <li>Created Responsive landing pages.</li>
+                        <li>Built reusable codes.</li>
+                        <li>Worked with different teams and provided unwavering support.</li>
+                    </div>
+                </div> <br>
+
+                <div class="">
+                    <span class="table-span">Company:</span> NERDY.EYE <br> 
+                    <span class="table-span">Positon:</span> Remote Intern
+                    <div class="second-table-list">
+                        <li>Assisted Experienced designers. </li>
+                        <li>Designed several landing pages using Figma.</li>
+                        <li>Wrote code with HTML and CSS.</li>
+                        <li>Created mockup designs.</li>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </div>
+    
+
+<!----Skills -->
+
+<div class="skillsection" id="skillsection">
+    <div class="skillcontainer">
+    <div class="skill-title"><Span class="skill-span">My</Span>Skills</div>
+    <p class="skill-sub">Here is my skills to represent my Expertise.</p>
+
+    <div class="skillset">
+        <div class="leftskill">
+        <p class="skillset-title">Technical skills</p>
+
+        <div class="skillset-container">
+            <h3 class="skill-name">HTML</h3>
+            <div class="progressbar">
+                <div class="html"><span class="percent">86%</span></div>
+            </div>
+        
+            <h3 class="skill-name">CSS</h3>
+            <div class="progressbar">
+                <div class="css"><span class="percent">70%</span></div>
+            </div>
+
+            <h3 class="skill-name">javascript</h3>
+            <div class="progressbar">
+                <div class="javascript"><span class="percent">50%</span></div>
+            </div>  
+
+            <h3 class="skill-name">Figma</h3>
+            <div class="progressbar">
+                <div class="figma"><span class="percent">50%</span></div>
+            </div>  
+
+        </div>    
+        </div>
+
+
+    <div class="rightskill">
+        <p class="skillset2">Soft skills</p>
+
+        <div class="skillset-container">
+            <h3 class="skill-name">Adaptability</h3>
+            <div class="progressbar">
+                <div class="adaptability"><span class="percent">80%</span></div>
+            </div>
+        
+            <h3 class="skill-name">Team Work</h3>
+            <div class="progressbar">
+                <div class="team-work"><span class="percent">70%</span></div>
+            </div>
+
+            <h3 class="skill-name">Communication</h3>
+            <div class="progressbar">
+                <div class="communication"><span class="percent">75%</span></div>
+            </div>  
+
+            <h3 class="skill-name">Time Management</h3>
+            <div class="progressbar">
+                <div class="time-management"><span class="percent">70%</span></div>
+            </div>  
+        </div>    
+    </div>
+    </div>
+</div>
+</div>
+
+<!---contactsection-->
+<div class="contactsection" id="contactsection">
+    <div class="contact-container">
+        <div class="contact-left">
+            <h2 class="contact-title">Contact Me</h2>
+            <p class="contact-sub">I am available for internship roles and gigs.</p>
+            <p class="contact-sub2">Connect with me using any of these.</p>
+            <p class="email"><i class="fa-solid fa-paper-plane"></i>amumtazha@gmail.com</p>
+            <p class="num"><i class="fa-solid fa-square-phone"></i>07014055413</p>
+            <div class="social-icons">
+            <a href=""><i class="fa-brands fa-facebook" style="color: #0000ff;"></i></a>
+            <a href=""><i class="fa-brands fa-twitter" style="color: #0000ff;"></i></a>
+            <a href=""><i class="fa-brands fa-instagram" style="color: #bb0a0a;"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin" style="color: #0000ff;"></i></a>
+            </div>
+            <a href="images/Resume.pdf" download class="cv-button">Download CV</a>
+        </div>
+        <div class="contact-right">
+            <form>
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                <button type="submit" class="cv-button">Submit</button>
+            </form>
+        </div>
+
+
+    </div>
+</div>
+
+<div class="copyright">
+    <div class="leftside">
+    <a href="#header">MumtyyY</a></div>
+    <div class="mid">@amumtazha.com</div>
+    <div class="rightside">
+    <a href="#header">Home</a>
+    <a href="#aboutsection">About</a>
+    <a href="#skillsection">Skills</a>
+    <a href="#contactsection">Contact</a></div>
+</div>
+
+
+
+<script src="script.js"></script>
+</body>
+</html>

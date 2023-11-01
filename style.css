@@ -1,0 +1,777 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    
+}
+body{
+    background-color: rgb(248, 214, 232);
+}
+html{
+    scroll-behavior: smooth;
+    
+}
+.header{
+    background-image: url(images/background\(1\).svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+}
+.container{
+    padding: 0px 0px;
+
+}
+nav{
+    background-image: url(images/background\(1\).svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    position :fixed;
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.logo{
+    font-size: 2rem;
+    font-weight: 600;
+    color: #dc0155;
+    letter-spacing: 1px;
+    margin-left: 90px;
+}
+.logospan{
+    color: black;
+    font-size: 2rem;
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+nav ul li {
+    padding: 10px;
+    list-style: none;
+    margin: 10px 20px;
+
+}
+nav ul li a{
+    color: black;
+    font-size: 18px;
+    position: relative;
+}
+nav ul li a:hover{
+    color: #dc0155;
+}
+nav ul li a::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #813953;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+.icon{
+    margin-right: 80px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+nav .fa-solid{
+    display: none;
+}
+.content{
+    margin-top: px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.title{
+    margin-top: 12%;
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #dc0155;
+}
+.subtitle{
+    font-size: 2.5rem;
+    color: black;
+    font-weight: bold;
+}
+.desc{
+    margin-top: 10px;
+    font-size: 1rem;
+    font-weight: 400;
+}
+.contentimg{
+    padding: 10px 35px;
+    border: none;
+    border-radius: 10px;
+    background-color: #dc0155;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 25px;
+}
+.heroimg{
+    width: 25%;
+    margin-top: 25px;
+}
+.aboutsection{
+    margin: 20px 15px;
+    padding: 5px 70px;
+    background-image: url(images/background\(1\).svg) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.about-top{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+}
+.about-title{
+    margin-top: 20px;
+    color: #dc0155;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+.about-subtitle{
+    color: black;
+    font-size: 1rem;
+}
+.friend1{
+    width: 17%;
+    border-radius: 90px;
+}
+.friend2{
+    width: 20%;
+    border-radius: 60px;
+}
+.friend3{
+    width: 20%;
+    border-radius: 60px;
+}
+.about-img{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+.education-table{
+    position: relative;
+    margin:40px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.table-title{
+    font-size: 1.7rem;
+    font-weight: 500;
+    color: #dc0155;
+    padding-left: 40px;
+}
+.table1{
+    width: 50%;
+}
+.edimg{
+    width: 80%;
+}
+.tablehead{
+    color: #dc0155;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.table-span{
+    color: #dc0155;
+    font-size: 1.3rem;
+    font-weight: normal;
+}
+.table2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    gap: 10px;
+    width: 50%;
+}
+
+.tab-titles{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 15px;
+
+}
+.tab-links{
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: black;
+    cursor: pointer;
+    position: relative;
+}
+.tab-links:hover{
+    color: #dc0155;
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #dc0155;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.tab-links.active-link::after{
+    width: 50%;
+}
+.tab-contents{
+    display: none;
+    margin-top: 25px;
+    color: black;
+    font: 7rem;
+    font-weight: normal;
+}
+.tab-contents.active-tab{
+    display: block;
+    margin-bottom: 10px;
+}
+.second-table-list{
+    list-style: disc;
+}
+
+.skillsection{
+    background-image: url(images/background\(1\).svg);
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 20px 15px;
+    padding: 5px 70px;
+}
+
+.skillcontainer{
+    margin: 10px;
+    border: 3px solid #813953;
+}
+.skill-title{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 1.6rem;
+    font-weight: normal;
+}
+.skill-span{
+    color: #dc0155;
+    font-size: 1.6rem;
+}
+.skill-sub{
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+}
+.skillset{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.leftskill{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.rightskill{
+    width: 50%;
+}
+.skillset-title{
+    margin-top: 20px;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #dc0155;
+}
+.skillset-container{
+    margin: 10px 10px;
+}
+.skill-name{
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    font-size: 1rem;
+}
+.progressbar{
+    background-color: #813953;
+    width: 500px;
+    height: 12px;
+    border-radius: 5px;
+}
+.progressbar div {
+    height: 12px;
+    width: 0%;
+    border-radius: 5px;
+    background-color: #fab4cf;
+}
+
+.progressbar div span{
+    font-size: 1.1rem;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    background-color: #fab4cf;
+    color: black;
+    float: right;
+    margin-top: -15px;
+    margin-right: -20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #813953;
+}
+
+.html{
+    animation: html 1s linear forwards;
+}
+.css{
+    animation: css 1s linear forwards;
+}
+.javascript{
+    animation: javascript 1s linear forwards;
+}
+.figma{
+    animation: figma 1s linear forwards;
+}
+@keyframes html{
+    100%{
+        width: 86%;
+    }
+}
+@keyframes css{
+    100%{
+        width: 70%;
+    }
+}
+@keyframes javascript{
+    100%{
+        width: 50%;
+    }
+}
+@keyframes figma{
+    100%{
+        width: 50%;
+    }
+}
+.skillset2{
+    padding: 0 40px;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #dc0155;
+
+}.adaptability{
+    animation: adaptability 1s linear forwards;
+}
+.team-work{
+    animation: team-work 1s linear forwards;
+}
+.communication{
+    animation: communication 1s linear forwards;
+}
+.time-management{
+    animation: time-management 1s linear forwards;
+}
+@keyframes adaptability{
+    100%{
+        width: 80%;
+    }
+}
+@keyframes team-work{
+    100%{
+        width: 70%;
+    }
+}
+@keyframes communication{
+    100%{
+        width: 75%;
+    }
+}
+@keyframes time-management{
+    100%{
+        width: 70%;
+    }
+}
+
+/*----contactsection----*/
+
+.contactsection{
+    background-image:url(images/background\(1\).svg);
+    border-radius: 10px;
+    object-fit: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 5px 70px;
+    margin: 15px;
+}
+.contact-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.contact-left{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 35%;
+}
+
+.contact-sub{
+    margin-top: 5px;
+
+}
+.email{
+    margin-top: 30px;
+    font-size: 18px;
+}
+.email i{
+    color: #dc0155;
+    margin-right: 15px;
+    font-size: 20px;
+}
+.num{
+    margin-top: 30px;
+    font-size: 18px;
+}
+.num i{
+    color: #dc0155;
+    margin-right: 15px;
+    font-size: 20px;
+}
+.social-icons{
+    margin-top: 30px;
+}
+
+.social-icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
+.social-icons a:hover{
+    transform: translateY(-5px);
+}
+.cv-button{
+    margin-top: 30px;
+    display: inline-block;
+    padding: 12px 40px;
+    background-color: #dc0155;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.contact-right{
+    width: 60%;
+}
+.contact-right form {
+    width: 90%;
+}
+form input, form textarea{
+    width: 100%;
+    border: none;
+    outline: none;
+    background: #fab4cf;
+    padding: 15px;
+    margin: 15px 0;
+    color: #813953;
+    font-size: 1rem;
+    border-radius: 6px;
+}
+
+.copyright{
+    width: 100%;
+    padding: 25px 0;
+    background-image: url(images/background\(1\).svg);
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    gap: 20px;
+}
+.leftside a{
+    color: black;
+}
+.mid{
+    color: black;
+}
+.rightside a{
+    color: black;
+}
+
+@media screen and (max-width:1200px){
+    .title{
+        margin-top: 20%;
+    }
+
+    .progressbar{
+        width: 400px;
+    }
+    
+}
+@media screen and (max-width:1017px){
+    .title{
+        margin-top: 30%;
+    }
+    .skillset{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+@media screen and (max-width:750px){
+    .icon{
+        display: none;
+    }
+    nav ul{
+        display: block;
+        text-align: center;
+        background: #dc0155;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+    nav .fa-bars{
+        display: block;
+        font-size: 30px;
+        margin-right: 40px;
+    }
+    
+    nav ul .fa-xmark{
+        display: block;
+        font-size: 25px;
+        color: #fab4cf;
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+
+    nav ul li a{
+        font-size: 25px;
+        color: black;
+        font-weight: bold;
+    }
+    nav ul li a:hover{
+        color: #fab4cf;
+    }
+    .title{
+        margin-top: 32%;
+    }
+    .progressbar{
+        width: 300px;
+    }
+}
+@media screen and (max-width:600px){
+    .title{
+        margin-top: 40%;
+        font-size: 1.2rem;
+    }
+    .subtitle{
+        font-size: 2rem;
+    }
+    .desc{
+        font-size: 0.7rem;
+    }
+    .contentimg{
+        margin-top: 30px;
+        padding: 8px 30px;
+    }
+    .tablehead{
+        font-size: 1.5rem;
+    }
+    .tablenotes{
+        font-size: 0.8rem;
+    }
+    .tab-links{
+        font-size: 1.2rem;
+    }
+    .table-span{
+        font-size: 1.1rem;
+    }
+    .progressbar{
+        width: 200px;
+    }
+    .progressbar div span {
+        width: 30px;
+        height: 30px;
+    }
+    .css.percent{
+        font-size: 5px;
+    }
+    .contact-title{
+        font-size: 1.2rem;
+    }
+    .contact-sub{
+        font-size: 14px;
+    }
+    .contact-sub2{
+        font-size: 14px;
+    }
+    .email{
+        font-size: 15px;
+        margin-top: 5px;
+        display: flex;
+    }
+    .email i{
+        font-size: 18px;
+    }
+    .num{
+        margin-top: 5px;
+        font-size: 15px;
+    }
+    .num a{
+        font-size: 18px;
+    }
+    .social-icons a{
+        font-size: 20px;
+    }
+    .contact-right{
+        width: 50%;
+    }
+    .contact-left{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        width: 35%;
+    }
+    .contact-right form{
+        width: 80%;
+    }
+    .cv-button{
+        margin-top: 8px;
+        padding: 10px 20px;
+        font-size: 0.7rem;
+    }
+    form input, form textarea{
+        padding: 13px;
+        font-size: 0.8rem;
+        margin-top: 10px;
+    }
+}
+@media screen and (max-width:475px){
+    .header{
+        margin:0 20px;
+    }
+    .title{
+        margin-top: 50%;
+    }
+    .subtitle{
+        font-size: 1.8rem;
+    }
+    .aboutsection{
+        padding: 20px;
+        margin-left: 25px;
+    }
+    .about-title{
+        font-size: 1.6rem;
+    }
+    .about-subtitle{
+        font-size: 0.9rem;
+    }
+    .tablehead{
+        font-size: 1.3rem;
+    }
+    .tab-links{
+        font-size: 1.1rem;
+    }
+    .table2{
+        margin: 20px;
+    }
+    .skillset-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    ..progressbar{
+        width: 100%;
+    }
+    .rightskill{
+        width: 40%;
+    }
+    .leftskill{
+        width: 40%;
+    }
+    .skill-sub{
+        font-size: 1rem;
+        text-align: center;
+    }
+}
+@media screen and (max-width:398px){
+    .title{
+        margin-top: 50%;
+        font-size: 1rem;
+    }
+    .subtitle{
+        font-size: 1.6rem;
+    }
+    .desc{
+        font-size: 10px;
+    }
+    .tab-titles{
+        padding-right: 25px;
+        display: flex;
+        font-size: 10px;
+        gap: 5px;
+    }
+    .progressbar{
+        width: 100px;
+    }
+    .contact-left{
+        margin: 40px;
+    }
+    .email{
+        font-size: 12px;
+    }
+}
